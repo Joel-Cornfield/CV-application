@@ -1,0 +1,88 @@
+.app-container {
+  min-height: 100vh;
+  background-color: #f5f6fa;
+  padding: 2rem;
+}
+
+.app-title {
+  text-align: center;
+  color: #2c3e50;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.content-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.form-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.preview-container {
+  max-width: 210mm;
+  margin: 0 auto;
+}
+
+.preview-actions {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  position: sticky;
+  top: 0;
+  background-color: #f5f6fa;
+  padding: 1rem;
+  z-index: 100;
+}
+
+.preview-wrapper {
+  background-color: #e0e0e0;
+  padding: 2rem;
+  border-radius: 8px;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.preview-btn {
+  background-color: #3498db;
+  color: white;
+  display: block;
+  margin: 2rem auto;
+  font-weight: bold;
+}
+
+.edit-btn {
+  background-color: #7f8c8d;
+  color: white;
+}
+
+button:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+
+button:disabled {
+  background-color: #bdc3c7;
+  cursor: not-allowed;
+  transform: none;
+}
+
+@media (max-width: 768px) {
+  .app-container {
+    padding: 1rem;
+  }
+  
+  .preview-wrapper {
+    padding: 1rem;
+  }
+}
